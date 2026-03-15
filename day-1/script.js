@@ -1,13 +1,13 @@
 const output = document.getElementById('output')
 function renderOutput(data) {
     const div = document.createElement('div');
-    div.innerText = data;
+    div.innerHTML = data;
     output.appendChild(div);
 }
 
 
 
-const n = 10
-for (let i = 0; i < n; i++){
-    renderOutput(n-i)
-} 
+const n5 = 5;
+for (let i = 1; i <= n5; i++){
+    renderOutput(i * i)
+}
